@@ -13,7 +13,7 @@ class CreateRepliesTable extends Migration
      */
     public function up()
     {
-        Schema::create('replie', function (Blueprint $table) {
+        Schema::create('replies', function (Blueprint $table) {
             $table->id();
             $table->string("body");
             $table->integer("user_id");

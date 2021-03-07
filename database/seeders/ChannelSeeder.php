@@ -16,7 +16,7 @@ class ChannelSeeder extends Seeder
     public function run()
     {
         $title = Str::random(10);
-        DB::table('channel')->insert([
+        DB::table('channels')->insert([
             'title' => $title,
             'slug' => Str::of($title)->slug(),
             'description' => Str::random(100)
